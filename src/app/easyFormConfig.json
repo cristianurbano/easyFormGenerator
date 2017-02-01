@@ -1,11 +1,11 @@
 {
 	"stepway" : {
-		"version" : "2.1.2"
+		"version" : "2.1.4"
 	},
 	"dragdropway" : {
-		"version" : "2.1.2"
+		"version" : "2.1.4"
 	},
 	"formviewer" : {
-		"version" : "2.1.2"
+		"version" : "2.1.4"
 	}
 }

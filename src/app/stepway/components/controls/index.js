@@ -1,39 +1,31 @@
-import { BlankConfig }        from './blank/config/stepway.blank.config';
-import {editBlankControlComponent, EDIT_BLANK_CONTROL_COMPONENT} from './blank/editBlank/stepway.editBlankControl.component';
-import editBlankModule  from './blank/editBlank/stepway.editBlankControl.module';
+import { BlankConfig } from './blank/config/blank.config';
+import editBlankModule, {editBlankControlComponent, EDIT_BLANK_CONTROL_COMPONENT} from './blank/editBlank/editBlankControl.component';
 
-import { IpAdressConfig }     from './IpAdress/config/stepway.IpAdress.config';
-import {editIpAdressControlComponent, EDIT_IP_ADRESS_COMPONENT} from './IpAdress/editIpAdress/stepway.editIpAdress.component';
-import editIpAdressModule  from './IpAdress/editIpAdress/stepway.editIpAdress.module';
+import { IpAdressConfig } from './IpAdress/config/IpAdress.config';
+import editIpAdressModule, {editIpAdressControlComponent, EDIT_IP_ADRESS_COMPONENT} from './IpAdress/editIpAdress/editIpAdress.component';
 
-import { DateConfig }         from './Date/config/stepway.date.config';
-import {editDateControlComponent, EDIT_DATE_COMPONENT} from './Date/editDate/stepway.editDate.component';
-import editDateModule from './Date/editDate/stepway.editDate.module';
+import { DateConfig } from './Date/config/date.config';
+import editDateModule, {editDateControlComponent, EDIT_DATE_COMPONENT} from './Date/editDate/editDate.component';
 
-import { CheckBoxConfig }     from './CheckBox/config/stepway.checkbox.config';
-import {editCheckBoxControlComponent, EDIT_CHECKBOX_COMPONENT} from './CheckBox/editCheckBox/stepway.editCheckBox.component';
-import editCheckBoxModule from './CheckBox/editCheckBox/stepway.editCheckBox.module';
+import { CheckBoxConfig } from './CheckBox/config/checkbox.config';
+import editCheckBoxModule, {editCheckBoxControlComponent, EDIT_CHECKBOX_COMPONENT} from './CheckBox/editCheckBox/editCheckBox.component';
 
-import { EmailConfig }        from './Email/config/stepway.email.config';
-import {editEmailControlComponent, EDIT_EMAIL_COMPONENT} from './Email/editEmail/stepway.editEmail.component';
-import editEmailControlModule from './Email/editEmail/stepway.editEmail.module';
+import { EmailConfig } from './Email/config/email.config';
+import editEmailControlModule, {editEmailControlComponent, EDIT_EMAIL_COMPONENT} from './Email/editEmail/editEmail.component';
 
-import { BasicSelectConfig }  from './basicSelect/config/basicSelect.config';
+import { BasicSelectConfig } from './basicSelect/config/basicSelect.config';
 import editBasicSelectModule, { editBasicSelectControlComponent, EDIT_BASIC_SELECT_COMPONENT } from './basicSelect/editBasicSelect/editBasicSelect.component';
 
-import { GroupedSelectConfig }  from './groupedSelect/config/stepway.groupedSelect.config';
-import {editGroupedSelectControlComponent, EDIT_GROUPED_SELECT_COMPONENT} from './groupedSelect/editGroupedSelect/stepway.editGroupedSelect.component';
-import editGroupedSelectModule  from './groupedSelect/editGroupedSelect/stepway.editGroupedSelect.module';
+import { GroupedSelectConfig } from './groupedSelect/config/groupedSelect.config';
+import editGroupedSelectModule, {editGroupedSelectControlComponent, EDIT_GROUPED_SELECT_COMPONENT} from './groupedSelect/editGroupedSelect/editGroupedSelect.component';
 
-import { HeaderConfig }  from './header/config/stepway.header.config';
-import {editHeaderControlComponent, EDIT_HEADER_CONTROL_COMPONENT} from './header/editHeader/stepway.editHeaderControl.component';
-import editHeaderControl from './header/editHeader/stepway.editHeaderControl.module';
+import { HeaderConfig } from './header/config/header.config';
+import editHeaderControl, {editHeaderControlComponent, EDIT_HEADER_CONTROL_COMPONENT} from './header/editHeader/editHeaderControl.component';
 
-import { PasswordConfig }  from './password/config/stepway.password.config';
-import {editPasswordControlComponent, EDIT_PASSWORD_CONTROL_COMPONENT} from './password/editPassword/stepway.editPassword.component';
-import editPasswordModule from './password/editPassword/stepway.editPassword.module';
+import { PasswordConfig } from './password/config/password.config';
+import editPasswordModule, {editPasswordControlComponent, EDIT_PASSWORD_CONTROL_COMPONENT} from './password/editPassword/editPassword.component';
 
-import { RadioConfig }  from './radio/config/stepway.radio.config';
+import { RadioConfig } from './radio/config/stepway.radio.config';
 import {editRadioControlComponent, EDIT_RADIO_CONTROL_COMPONENT} from './radio/editRadio/stepway.editRadio.component';
 import editRadioModule from './radio/editRadio/stepway.editRadio.module';
 

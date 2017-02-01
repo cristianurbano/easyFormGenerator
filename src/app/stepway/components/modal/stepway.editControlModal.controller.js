@@ -8,11 +8,11 @@ class editControlModalController {
                 selectOptionManage,
                 $modalProxy) {
 
-    this.$modalInstance       = $uibModalInstance;
-    this.nyaSelect             = nyaSelect;
-    this.toaster               = toaster;
-    this.selectOptionManage   = selectOptionManage;
-    this.$modalProxy           = $modalProxy;
+    this.$modalInstance     = $uibModalInstance;
+    this.nyaSelect          = nyaSelect;
+    this.toaster            = toaster;
+    this.selectOptionManage = selectOptionManage;
+    this.$modalProxy        = $modalProxy;
 
     this.init();
   }
@@ -376,12 +376,12 @@ class editControlModalController {
     this.nyaSelect.temporyConfig.formlyOptions = resetNyASelectOptions;
     if (this.radioRowCollection.rows.length > 0) {
       for (let i = 0; i <= this.radioRowCollection.rows.length - 1; i++){
-            const newOption = {
-              'name'  : this.radioRowCollection.rows[i].option,
-              'value'  : i,
-              'group'  : ''
-            };
-            this.nyaSelect.temporyConfig.formlyOptions.push(newOption);
+        const newOption = {
+          'name'  : this.radioRowCollection.rows[i].option,
+          'value'  : i,
+          'group'  : ''
+        };
+        this.nyaSelect.temporyConfig.formlyOptions.push(newOption);
         }
     }
   }

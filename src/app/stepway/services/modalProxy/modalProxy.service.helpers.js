@@ -2,7 +2,25 @@ import { configs } from '../../components/controls';
 
 const resetNyaSelect = (nyaSelectObj) => {
   //reset
-  angular.copy({ controls: [...configs] }, nyaSelectObj);
+  angular.copy(
+    { 
+      controls: [...configs],
+      selectedControl : 'none' ,
+      temporyConfig : {
+        selectedControl: 'none',
+        formlyLabel: 'label', 
+        formlyRequired: false, 
+        formlyDescription: '',
+        formlyPlaceholder: '',
+        formlyDefaultValue: '',
+        formlyOptions : [],
+        //expressions/validation fields
+        formlyExpressionProperties: {},
+        formlyValidators: {},
+        formlyValidation: {}                                        
+      } 
+    }, 
+    nyaSelectObj);
   return true;
 };
 
@@ -38,8 +56,8 @@ const returnControlFromAddCtrlModalModel = (CtrlModalModel) =>{
         formlyOptions: [...controlRef.formlyOptions],
         //validation fields
         formlyExpressionProperties: angular.copy(controlRef.formlyExpressionProperties),
-        formlyValidators: angular.copy(controlRef.formlyExpressionProperties),
-        formlyValidation: angular.copy(controlRef.formlyExpressionProperties)
+        formlyValidators: angular.copy(controlRef.formlyValidators),
+        formlyValidation: angular.copy(controlRef.formlyValidation)
       };
       // particular case: date picker needs an additional property
       if (controlRef.formlyType === 'datepicker') {
