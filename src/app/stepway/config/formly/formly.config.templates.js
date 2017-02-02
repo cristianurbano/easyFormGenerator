@@ -99,7 +99,7 @@ export const datepickerTemplate = {
         ng-model="model[options.key]"
         class="form-control"
         ng-click="datepicker.open($event)"
-        uib-datepicker-popup="{{to.datepickerOptions.format}}"
+        uib-datepicker-popup
         is-open="datepicker.opened"
         datepicker-options="to.datepickerOptions"
       />

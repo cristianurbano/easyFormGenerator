@@ -35,7 +35,7 @@ export const editCheckBoxControlComponent = {
                   <input
                     type="text"
                     class="form-control"
-                    uib-datepicker-popup="{{$ctrl.nyaSelect.temporyConfig.datepickerOptions.format}}"
+                    uib-datepicker-popup
                     ng-model="$ctrl.demodt.dt"
                     is-open="$ctrl.demodt.opened"
                     datepicker-options="$ctrl.dateOptions"
